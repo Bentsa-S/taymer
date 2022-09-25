@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+svg{
+    height: calc(20px + 240 * (100vw / 1920));
+    width: calc(20px + 240 * (100vw / 1920));
+}
+
+svg circle {
+    stroke: green;
+    stroke-width: 25px;
+    fill: transparent;
+    stroke-dasharray: 1255;
+
+}
+.type{
+    color: white;
+    font-size:  calc(2px + 28 * (100vw / 1920));
+    text-align: center;
+
+}
+
+.number{
+
+    position: absolute;
+    top: calc(533px + -75 * (100vw / 1920));
+    font-size:  calc(10px + 70 * (100vw / 1920));
+    color: white;
+    margin-left: 5vw;
+}
+
+.time-background{
+    background-color: #3b3b3b;
+    border-radius: 30px;
+    padding: calc(5px + 30 * (100vw / 1920));
+
+}
+.time-container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.time-background p{
+    color: #ff8888;
+    font-size:  calc(2px + 23 * (100vw / 1920));
+    text-align: center;
+}
+.time-background h1{
+    color: #3b3b3b;
+    font-size:  calc(2px + 23 * (100vw / 1920));
+    text-align: center;
+}
+
+
+.input-container{
+    min-width: 70%;
+    background-color: #3b3b3b;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.input-container select {
+    display: inline-block;
+    border: none;
+    font-size:  calc(1px + 19 * (100vw / 1920));
+    line-height: 1.5em;
+    background-color: lightgray;
+    padding: 0.5em 3.5em 0.5em 1em;
+}
+.button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size:  calc(1px + 19 * (100vw / 1920));
+    line-height: 1.5em;
+    background-color: lightgray;
+    padding: 0.3em 2em 0.3em 2em;
+    transition: background-color 7s;
+}
+.button:hover{
+    border-radius: 3px;
+    background-color: #a6a5a5;
+}
