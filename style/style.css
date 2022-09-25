@@ -33,7 +33,7 @@ svg circle {
 .number{
 
     position: absolute;
-    top: calc(533px + -75 * (100vw / 1920));
+    top: calc(360px + -75 * (100vw / 1920));
     font-size:  calc(10px + 70 * (100vw / 1920));
     color: white;
     margin-left: 5vw;
