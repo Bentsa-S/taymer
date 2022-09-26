@@ -21,6 +21,7 @@ svg circle {
     stroke-width: 25px;
     fill: transparent;
     stroke-dasharray: 1255;
+    transition: stroke 1s;
 
 }
 .type{
@@ -33,10 +34,11 @@ svg circle {
 .number{
 
     position: absolute;
-    top: calc(360px + -75 * (100vw / 1920));
     font-size:  calc(10px + 70 * (100vw / 1920));
     color: white;
-    margin-left: 5vw;
+    margin-left: 4.8vw;
+    margin-top: calc(-22px + -151 * (100vw / 1920));
+
 }
 
 .time-background{
@@ -79,7 +81,8 @@ svg circle {
     background-color: lightgray;
     padding: 0.5em 3.5em 0.5em 1em;
 }
-.button{
+.button,
+.button-stop{
     display: inline-block;
     border: none;
     cursor: pointer;
@@ -87,9 +90,9 @@ svg circle {
     line-height: 1.5em;
     background-color: lightgray;
     padding: 0.3em 2em 0.3em 2em;
-    transition: background-color 7s;
+    transition: background-color 1s;
 }
-.button:hover{
+.button:hover, .button-stop:hover{
     border-radius: 3px;
     background-color: #a6a5a5;
 }
